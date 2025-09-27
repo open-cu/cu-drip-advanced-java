@@ -1,12 +1,12 @@
-package logging;
-
-import org.objectweb.asm.*;
+package example4.logging;
 
 import java.io.FileOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.commons.AdviceAdapter;
@@ -31,7 +31,7 @@ public class LoggingMain {
 
     static class AddLoggerClassVisitor extends ClassVisitor {
         public AddLoggerClassVisitor(ClassVisitor cv) { super(Opcodes.ASM9, cv); }
-    
+
         @Override
         public MethodVisitor visitMethod(int access, String name, String desc, String sig, String[] ex) {
             MethodVisitor mv = super.visitMethod(access, name, desc, sig, ex);

@@ -1,4 +1,4 @@
-package invoke;
+package example4.invoke;
 
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;

@@ -1,4 +1,4 @@
-package ru.sin.example2;
+package example2;
 
 import java.util.function.Function;
 

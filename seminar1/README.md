@@ -2,9 +2,9 @@
 
 # Запуск бенчмарка
 
-`./gradlew jmh` - запустить бенчмарк
+`./gradlew seminar1:jmh` - запустить бенчмарк
 
-`./gradlew jmhJar` - собрать JMH Jar  
+`./gradlew seminar1:jmhJar` - собрать JMH Jar  
 
 `java -jar ./build/libs/jmh-template-1.0-jmh.jar` - запустить бенчмарк
 

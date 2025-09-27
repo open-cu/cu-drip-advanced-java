@@ -1,8 +1,8 @@
-package runner;
+package example3.runner;
 
+import example3.loader.FileSystemClassLoader;
 import java.lang.ref.WeakReference;
 import java.nio.file.Path;
-import loader.FileSystemClassLoader;
 
 public class PluginRunner {
     public static void main(String[] args) throws Exception {

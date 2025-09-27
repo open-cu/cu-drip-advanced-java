@@ -1,4 +1,4 @@
-package loader;
+package example3.loader;
 
 import java.nio.file.*;
 import java.io.IOException;

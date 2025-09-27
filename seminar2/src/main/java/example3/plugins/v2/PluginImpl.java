@@ -1,4 +1,4 @@
-package plugins.v2;
+package example3.plugins.v2;
 
 public class PluginImpl {
     public void run() {

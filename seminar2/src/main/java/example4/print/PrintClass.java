@@ -1,4 +1,4 @@
-package print;
+package example4.print;
 
 
 import org.objectweb.asm.ClassReader;
