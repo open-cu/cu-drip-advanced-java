@@ -1,6 +1,6 @@
 package ru.centraluniversity;
 
-public interface OffHeapIntIntHashMap {
+public interface IntIntMap {
 
     void put(int key, int value);
 
@@ -8,11 +8,7 @@ public interface OffHeapIntIntHashMap {
 
     boolean containsKey(int key);
 
-    boolean remove(int key);
+    void remove(int key);
 
     int size();
-
-    void clear();
-
-    void free();
 }
