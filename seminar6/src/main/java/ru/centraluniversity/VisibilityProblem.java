@@ -1,11 +1,13 @@
 package ru.centraluniversity;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 public class VisibilityProblem {
-    private static boolean running = true;
+    private static AtomicBoolean running = new AtomicBoolean(true);
 
     public static void main(String[] args) throws InterruptedException {
         Thread t = new Thread(() -> {
-            while (running) {
+            while (running.get()) {
                 // ...
             }
             System.out.println("Thread stopped");
@@ -13,7 +15,7 @@ public class VisibilityProblem {
 
         t.start();
         Thread.sleep(100);
-        running = false; // поток может не увидеть это изменение!
+        running.set(false); // поток может не увидеть это изменение!
         t.join();
     }
 }
